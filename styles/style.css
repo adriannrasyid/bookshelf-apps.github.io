@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Roboto', sans serif;
+}
+
+input, button {
+    font-size: 18px;
+}
+
+.head-bar {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #387ADF;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.input-section h2 {
+    text-align: center;
+    color: #387ADF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.input-section form .input {
+    margin: 10px 0;
+}
+
+.input-section form button {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid #387ADF;
+}
+
+.input-section form button:hover {
+    background-color: #387ADF;
+    color: #FFFFFF;
+    transition: ease-in-out 0.1s;
+}
+
+.input-section form .input input {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid #387ADF;
+}
+
+.input-section form .input label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #387ADF;
+}
+
+.input-section form .input-inline {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-section > form > .input-inline > label {
+    color: #387ADF;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.search-section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.search-section h2 {
+    color: #387ADF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.search-section form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search-section form label {
+    display: flex;
+    align-items: center;
+    color: #387ADF;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.search-section form input {
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid #387ADF;
+}
+
+.search-section form button {
+    background-color: #FFFFFF;
+    border: 2px solid #387ADF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section form button:hover {
+    background-color: #387ADF;
+    color: #FFFFFF;
+    transition: ease-in-out 0.1s;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+  
+.book_shelf > h2 {
+    color: #387ADF;
+    text-align: center;
+    font-weight: 500;
+}
+  
+.book_shelf > .book_list {
+    padding: 16px;
+}
+  
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 2px #387ADF solid;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+  
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+  
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 2px solid;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* .book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #22C55E;
+    color: #FFFFFF;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #FF1E00;
+    color: #FFFFFF;
+} */
+
+.green-read {
+    background-color: #FFFFFF;
+    color: #22C55E;
+}
+
+.green-read:hover {
+    background-color: #22C55E;
+    color: #FFFFFF;
+}
+  
+.green-unread {
+    background-color: #FFFFFF;
+    color: #22C55E;
+}
+
+.green-unread:hover {
+    background-color: #22C55E;
+    color: #FFFFFF;
+}
+
+.red-read {
+    background-color: #FFFFFF;
+    color: #FF1E00;
+}
+
+.red-read:hover {
+    background-color: #FF1E00;
+    color: #FFFFFF;
+}
+  
+.red-unread {
+    background-color: #FFFFFF;
+    color: #FF1E00;
+}
+
+.red-unread:hover {
+    background-color: #FF1E00;
+    color: #FFFFFF;
+}
+  
+.action {
+    display: flex;
+    gap: 10px;
+}

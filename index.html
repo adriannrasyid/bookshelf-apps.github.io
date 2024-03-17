@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head-bar">
+        <h1 class="head-title">My Bookshelf Apps</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <h2>Masukkan Nama Buku</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul Buku</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun Terbit</label>
+                    <input id="inputBookYear" type="number" required>
+                </div>
+                <div class="input-inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox" />
+                  </div>
+                <button id="submitBook" type="submit">Submit Buku</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <h2>Cari Buku</h2>
+            <form id="searchBook">
+                <label for="searchBookTitle"></label>
+                <input type="text" id="searchBookTitle" placeholder="Ketikkan disini">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+    
+            <div id="incompleteBookshelfList" class="book_list">
+              <!-- <article class="book_item">
+                <h3>Book Title</h3>
+                <p>Penulis: John Doe</p>
+                <p>Tahun: 2002</p>
+    
+                <div class="action">
+                  <button class="green">Selesai dibaca</button>
+                  <button class="red">Hapus buku</button>
+                </div>
+              </article> -->
+            </div>
+          </section>
+    
+          <section class="book_shelf">
+            <h2>Selesai dibaca</h2>
+    
+            <div id="completeBookshelfList" class="book_list">
+              <!-- <article class="book_item">
+                <h3>Book Title</h3>
+                <p>Penulis: John Doe</p>
+                <p>Tahun: 2002</p>
+    
+                <div class="action">
+                  <button class="green">Belum selesai dibaca</button>
+                  <button class="red">Hapus buku</button>
+                </div>
+              </article> -->
+            </div>
+          </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
